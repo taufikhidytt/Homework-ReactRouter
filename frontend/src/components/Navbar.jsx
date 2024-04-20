@@ -42,13 +42,13 @@ const Navbar = () => {
       justify="space-between"
       wrap="wrap"
       padding="1rem"
-      bg="teal.500"
+      bg="gray"
       color="white"
     >
       <Link to="/">
         <Flex align="center" mr={5} cursor="pointer">
           <Text fontSize="xl" fontWeight="bold">
-            My Website
+            My Library
           </Text>
         </Flex>
       </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
           </Link>
         )}
         {!isLogin ? (
-          <Button onClick={onOpen} colorScheme="blue">
+          <Button onClick={onOpen} colorScheme="blackAlpha">
             Login
           </Button>
         ) : (
